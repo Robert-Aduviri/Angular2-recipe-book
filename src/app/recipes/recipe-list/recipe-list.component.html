@@ -6,8 +6,11 @@
 <div class="row">
   <div class="col-xs-12">
     <ul class="list-group">
-      <rb-recipe-item [recipe]="recipe" (click)="onSelected(recipe)"></rb-recipe-item>
-      <rb-recipe-item [recipe]="recipe2" (click)="onSelected(recipe2)"></rb-recipe-item>
+      <app-recipe-item
+        *ngFor="let recipe of recipes"
+        [recipe]="recipe"
+        (click)="onSelected(recipe)">
+      </app-recipe-item>
     </ul>
   </div>
 </div>
