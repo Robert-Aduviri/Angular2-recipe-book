@@ -1,21 +1,28 @@
-<!-- <div>Not yet</div> -->
 <div class="row">
   <div class="col-xs-12">
-    <form id="shopping-list-edit">
+    <form>
       <div class="row">
         <div class="col-sm-5 form-group">
-          <label for="item-name">Name</label>
-          <input type="text" id="item-name" required class="form-control">
+          <label for="name">Name</label>
+          <input
+            type="text"
+            id="name"
+            class="form-control"
+            #nameInput>
         </div>
         <div class="col-sm-2 form-group">
-          <label for="item-amount">Amount</label>
-          <input type="text" id="item-amount" required class="form-control">
+          <label for="amount">Amount</label>
+          <input
+            type="number"
+            id="amount"
+            class="form-control"
+            #amountInput>
         </div>
       </div>
       <div class="row">
         <div class="col-xs-12">
           <button class="btn btn-success" type="submit">Add</button>
-          <button class="btn btn-danger" type="button">Delete Item</button>
+          <button class="btn btn-danger" type="button">Delete</button>
           <button class="btn btn-primary" type="button">Clear</button>
         </div>
       </div>
